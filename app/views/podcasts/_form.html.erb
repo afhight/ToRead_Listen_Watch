@@ -1,0 +1,12 @@
+<%= form_for @podcast, remote: true do |f| %>
+  
+  <div class="field">
+    <%= f.text_field :title, placeholder: "Title" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :link, placeholder: "Link to Podcast" %>
+  </div>
+  <div class="actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

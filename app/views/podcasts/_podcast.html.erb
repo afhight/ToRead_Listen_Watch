@@ -1,0 +1,11 @@
+<div>
+	<%#= podcast.title %>
+	<%= link_to "#{podcast.title}", "#{podcast.link}" %>
+	<p>
+		<%= link_to edit_podcast_path(podcast), remote: true do %>
+			<button class="btn btn-default btn-sm">
+		  <span class="glyphicon glyphicon-pencil"></span>
+	  <% end %>
+	 		</button>
+	</p>
+</div>

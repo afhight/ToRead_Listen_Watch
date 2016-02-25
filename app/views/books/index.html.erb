@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<%#= link_to 'New Book', new_book_path, remote: true %>
+
+<div class="row">
+  <div class="col-md-3">
+    <br>
+    <br>
+    <%= link_to new_book_path, remote: true  do %>
+    <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-plus"> New Book</span>
+      <% end %>
+    </button>
+
+  <div id="book-form" style="display:none;"></div>
+
+</div>
+
+<div class="col-md-3">
+  <h2><strong>To Read</strong></h2>
+  <div id="books">
+    <%= render @books %>
+  </div>
+</div>

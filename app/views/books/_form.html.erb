@@ -1,0 +1,14 @@
+<%= form_for @book, remote: true do |f| %>
+  <div class="field">
+    <%= f.text_field :title, placeholder: "Title" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :author, placeholder: "Author" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :link, placeholder: "Link to Book" %>
+  </div>
+  <div class="actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

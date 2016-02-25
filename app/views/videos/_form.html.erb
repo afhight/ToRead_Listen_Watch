@@ -1,0 +1,15 @@
+<%= form_for(@video) do |f| %>
+  
+  <div class="field">
+    <%= f.text_field :speaker, placeholder: "Speaker or Author" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :title, placeholder: "Title" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :link, placeholder: "Link to Video" %>
+  </div>
+  <div class="actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>

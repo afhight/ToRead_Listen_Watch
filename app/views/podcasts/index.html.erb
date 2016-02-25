@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-3">
+    <br>
+    <br>
+    <%= link_to new_podcast_path, remote: true  do %>
+    <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-plus"> New Podcast</span>
+      <% end %>
+    </button>
+
+  <div id="podcast-form" style="display:none;"></div>
+
+</div>
+
+<div class="col-md-3 offset-4">
+  <h2><strong>To Listen</strong></h2>
+  <div id="podcasts">
+    <%= render @podcasts %>
+  </div>
+</div>

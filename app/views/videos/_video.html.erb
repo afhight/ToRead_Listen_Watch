@@ -1,0 +1,12 @@
+<div>
+	<%= video.speaker %>
+	<h3><%= link_to "#{video.title}", video, remote: true, method: :delete, data: { confirm: 'I hope you liked the video! Are you sure you want to delete it from your list?' } %></h3>
+	<%= link_to "Link to video", "#{video.link}" %>
+	<p>
+		<%= link_to edit_video_path(video), remote: true do %>
+			<button class="btn btn-default btn-sm">
+		  <span class="glyphicon glyphicon-pencil"></span>
+	  <% end %>
+	 		</button>
+	</p>
+</div>

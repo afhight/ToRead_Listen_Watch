@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="row">
+  <div class="col-md-3">
+    <br>
+    <br>
+    <%= link_to new_video_path, remote: true  do %>
+    <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-plus"> New Video</span>
+      <% end %>
+    </button>
+
+  <div id="video-form" style="display:none;"></div>
+
+</div>
+
+<div class="col-md-3 offset-9">
+  <h2><strong>To Watch</strong></h2>
+  <div id="videos">
+    <%= render @videos %>
+  </div>
+</div>

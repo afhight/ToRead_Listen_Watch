@@ -1,0 +1,11 @@
+<div>
+	<h3><%= link_to "#{book.author}, #{book.title}", book, remote: true, method: :delete, data: { confirm: 'Congratulations on finishing this book! Are you sure you want to delete it from your list?' } %></h3>
+	<%= link_to 'More Info', "#{book.link}" %>
+	<p>
+		<%= link_to edit_book_path(book), remote: true do %>
+			<button class="btn btn-default btn-sm">
+		  <span class="glyphicon glyphicon-pencil"></span>
+	  <% end %>
+	 		</button>
+	</p>
+</div>
